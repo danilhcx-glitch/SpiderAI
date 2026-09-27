@@ -1,0 +1,1674 @@
+{
+  "repository": "https://github.com/SuYxh/ai-news-aggregator",
+  "revision": "6d2277cab2a6828810fd54cdd2962e3109628e38",
+  "upstream_status_at": "2026-09-26T08:54:55.189Z",
+  "note": "候选目录中的 enabled 均为 false；实际启用状态见 config/sources.json，来源未逐一验证可用性。",
+  "sources": [
+    {
+      "id": "S001",
+      "name": "量子位",
+      "url": "https://www.qbitai.com/feed",
+      "kind": "RSS",
+      "category": "中文博客",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照失败",
+      "effective_url": "https://www.qbitai.com/feed"
+    },
+    {
+      "id": "S002",
+      "name": "宝玉的分享",
+      "url": "https://baoyu.io/feed.xml",
+      "kind": "RSS",
+      "category": "中文博客",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://baoyu.io/feed.xml"
+    },
+    {
+      "id": "S003",
+      "name": "爱范儿",
+      "url": "http://www.ifanr.com/feed",
+      "kind": "RSS",
+      "category": "中文博客",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 20 条",
+      "effective_url": "http://www.ifanr.com/feed"
+    },
+    {
+      "id": "S004",
+      "name": "阮一峰的网络日志",
+      "url": "http://feeds.feedburner.com/ruanyifeng",
+      "kind": "RSS",
+      "category": "中文博客",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 6 条",
+      "effective_url": "http://feeds.feedburner.com/ruanyifeng"
+    },
+    {
+      "id": "S005",
+      "name": "美团技术团队",
+      "url": "https://tech.meituan.com/feed/",
+      "kind": "RSS",
+      "category": "中文博客",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 0 条",
+      "effective_url": "https://tech.meituan.com/feed/"
+    },
+    {
+      "id": "S006",
+      "name": "SuperTechFans",
+      "url": "https://www.supertechfans.com/cn/index.xml",
+      "kind": "RSS",
+      "category": "中文博客",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 5 条",
+      "effective_url": "https://www.supertechfans.com/cn/index.xml"
+    },
+    {
+      "id": "S007",
+      "name": "掘金本周最热",
+      "url": "https://rsshub.bestblogs.dev/juejin/trending/all/weekly",
+      "kind": "RSS",
+      "category": "中文聚合",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 20 条",
+      "effective_url": "https://rsshub.bestblogs.dev/juejin/trending/all/weekly"
+    },
+    {
+      "id": "S008",
+      "name": "李继刚(@lijigang_com)",
+      "url": "https://api.xgo.ing/rss/user/ca2fa444b6ea4b8b974fe148056e497a",
+      "kind": "RSS",
+      "category": "中文Twitter博主",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/ca2fa444b6ea4b8b974fe148056e497a"
+    },
+    {
+      "id": "S009",
+      "name": "宝玉(@dotey)",
+      "url": "https://api.xgo.ing/rss/user/97f1484ae48c430fbbf3438099743674",
+      "kind": "RSS",
+      "category": "中文Twitter博主",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/97f1484ae48c430fbbf3438099743674"
+    },
+    {
+      "id": "S010",
+      "name": "歸藏(guizang.ai)(@op7418)",
+      "url": "https://api.xgo.ing/rss/user/831fac36aa0a49a9af79f35dc1c9b5d9",
+      "kind": "RSS",
+      "category": "中文Twitter博主",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/831fac36aa0a49a9af79f35dc1c9b5d9"
+    },
+    {
+      "id": "S011",
+      "name": "小互(@imxiaohu)",
+      "url": "https://api.xgo.ing/rss/user/74e542992cf7441390c708f5601071d4",
+      "kind": "RSS",
+      "category": "中文Twitter博主",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/74e542992cf7441390c708f5601071d4"
+    },
+    {
+      "id": "S012",
+      "name": "向阳乔木(@vista8)",
+      "url": "https://api.xgo.ing/rss/user/9de19c78f7454ad08c956c1a00d237fe",
+      "kind": "RSS",
+      "category": "中文Twitter博主",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/9de19c78f7454ad08c956c1a00d237fe"
+    },
+    {
+      "id": "S013",
+      "name": "AI产品黄叔(@PMbackttfuture)",
+      "url": "https://api.xgo.ing/rss/user/5b632b7fba274f62928cdcc9d3db4c5e",
+      "kind": "RSS",
+      "category": "中文Twitter博主",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/5b632b7fba274f62928cdcc9d3db4c5e"
+    },
+    {
+      "id": "S014",
+      "name": "idoubi(@idoubicc)",
+      "url": "https://api.xgo.ing/rss/user/3d72acd51d21414ea39871fc01982a65",
+      "kind": "RSS",
+      "category": "中文Twitter博主",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/3d72acd51d21414ea39871fc01982a65"
+    },
+    {
+      "id": "S015",
+      "name": "Viking(@vikingmute)",
+      "url": "https://api.xgo.ing/rss/user/aab44cb2665a49258cd81f63b0b55192",
+      "kind": "RSS",
+      "category": "中文Twitter博主",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/aab44cb2665a49258cd81f63b0b55192"
+    },
+    {
+      "id": "S016",
+      "name": "Geek(@geekbb)",
+      "url": "https://api.xgo.ing/rss/user/9cb3b60e689e4445a7fbdfd0be144126",
+      "kind": "RSS",
+      "category": "中文Twitter博主",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/9cb3b60e689e4445a7fbdfd0be144126"
+    },
+    {
+      "id": "S017",
+      "name": "Tw93(@HiTw93)",
+      "url": "https://api.xgo.ing/rss/user/665fc88440fd4436acbc2e630d824926",
+      "kind": "RSS",
+      "category": "中文Twitter博主",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/665fc88440fd4436acbc2e630d824926"
+    },
+    {
+      "id": "S018",
+      "name": "Yangyi(@Yangyixxxx)",
+      "url": "https://api.xgo.ing/rss/user/66c40de71a9842fda4853b7d9d1d20da",
+      "kind": "RSS",
+      "category": "中文Twitter博主",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/66c40de71a9842fda4853b7d9d1d20da"
+    },
+    {
+      "id": "S019",
+      "name": "hidecloud(@hidecloud)",
+      "url": "https://api.xgo.ing/rss/user/23d41992b29340788aa3d09d8364c5f5",
+      "kind": "RSS",
+      "category": "中文Twitter博主",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 39 条",
+      "effective_url": "https://api.xgo.ing/rss/user/23d41992b29340788aa3d09d8364c5f5"
+    },
+    {
+      "id": "S020",
+      "name": "cat(@_catwu)",
+      "url": "https://api.xgo.ing/rss/user/66a6b39ddcfa42e39621e0ab293c1bdd",
+      "kind": "RSS",
+      "category": "中文Twitter博主",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/66a6b39ddcfa42e39621e0ab293c1bdd"
+    },
+    {
+      "id": "S021",
+      "name": "meng shao(@shao__meng)",
+      "url": "https://api.xgo.ing/rss/user/48aae530e0bf413aa7d44380f418e2e3",
+      "kind": "RSS",
+      "category": "中文Twitter博主",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/48aae530e0bf413aa7d44380f418e2e3"
+    },
+    {
+      "id": "S022",
+      "name": "Eric Jing(@ericjing_ai)",
+      "url": "https://api.xgo.ing/rss/user/ddfdcdd4e390495c942f0b5da62af0fb",
+      "kind": "RSS",
+      "category": "中文Twitter博主",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/ddfdcdd4e390495c942f0b5da62af0fb"
+    },
+    {
+      "id": "S023",
+      "name": "Qwen(@Alibaba_Qwen)",
+      "url": "https://api.xgo.ing/rss/user/80032d016d654eb4afe741ff34b7643d",
+      "kind": "RSS",
+      "category": "中国AI公司",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/80032d016d654eb4afe741ff34b7643d"
+    },
+    {
+      "id": "S024",
+      "name": "DeepSeek(@deepseek_ai)",
+      "url": "https://api.xgo.ing/rss/user/68b610deb24b47ae9a236811563cda86",
+      "kind": "RSS",
+      "category": "中国AI公司",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/68b610deb24b47ae9a236811563cda86"
+    },
+    {
+      "id": "S025",
+      "name": "Hunyuan(@TXhunyuan)",
+      "url": "https://api.xgo.ing/rss/user/6e8e7b42cb434818810f87bcf77d86fb",
+      "kind": "RSS",
+      "category": "中国AI公司",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/6e8e7b42cb434818810f87bcf77d86fb"
+    },
+    {
+      "id": "S026",
+      "name": "Skywork(@Skywork_ai)",
+      "url": "https://api.xgo.ing/rss/user/6d7d398dd80b48d79669c92745d32cf6",
+      "kind": "RSS",
+      "category": "中国AI公司",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/6d7d398dd80b48d79669c92745d32cf6"
+    },
+    {
+      "id": "S027",
+      "name": "Kling AI(@Kling_ai)",
+      "url": "https://api.xgo.ing/rss/user/564237c3de274d58a04f064920817888",
+      "kind": "RSS",
+      "category": "中国AI公司",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/564237c3de274d58a04f064920817888"
+    },
+    {
+      "id": "S028",
+      "name": "Hailuo AI (MiniMax)(@Hailuo_AI)",
+      "url": "https://api.xgo.ing/rss/user/e65b5e59fcb544918c1ba17f5758f0f8",
+      "kind": "RSS",
+      "category": "中国AI公司",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/e65b5e59fcb544918c1ba17f5758f0f8"
+    },
+    {
+      "id": "S029",
+      "name": "Fish Audio(@FishAudio)",
+      "url": "https://api.xgo.ing/rss/user/4900b3dcd592424687582ff9e0f148ea",
+      "kind": "RSS",
+      "category": "中国AI公司",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/4900b3dcd592424687582ff9e0f148ea"
+    },
+    {
+      "id": "S030",
+      "name": "Monica_IM(@hey_im_monica)",
+      "url": "https://api.xgo.ing/rss/user/5d749cc613ec4069bb2a47334739e1b6",
+      "kind": "RSS",
+      "category": "中国AI公司",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 19 条",
+      "effective_url": "https://api.xgo.ing/rss/user/5d749cc613ec4069bb2a47334739e1b6"
+    },
+    {
+      "id": "S031",
+      "name": "Dify(@dify_ai)",
+      "url": "https://api.xgo.ing/rss/user/0be252fedbe84ad7bea21be44b18da89",
+      "kind": "RSS",
+      "category": "中国AI公司",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/0be252fedbe84ad7bea21be44b18da89"
+    },
+    {
+      "id": "S032",
+      "name": "Jina AI(@JinaAI_)",
+      "url": "https://api.xgo.ing/rss/user/f510f6e7eecf456ca7e2895a46752888",
+      "kind": "RSS",
+      "category": "中国AI公司",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 29 条",
+      "effective_url": "https://api.xgo.ing/rss/user/f510f6e7eecf456ca7e2895a46752888"
+    },
+    {
+      "id": "S033",
+      "name": "Milvus(@milvusio)",
+      "url": "https://api.xgo.ing/rss/user/424e67b19eed4500b7a440976bbd2ade",
+      "kind": "RSS",
+      "category": "中国AI公司",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/424e67b19eed4500b7a440976bbd2ade"
+    },
+    {
+      "id": "S034",
+      "name": "Fei-Fei Li(@drfeifei)",
+      "url": "https://api.xgo.ing/rss/user/a4bfe44bfc0d4c949da21ebd3f5f42a5",
+      "kind": "RSS",
+      "category": "华人AI研究者",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/a4bfe44bfc0d4c949da21ebd3f5f42a5"
+    },
+    {
+      "id": "S035",
+      "name": "Junyang Lin(@JustinLin610)",
+      "url": "https://api.xgo.ing/rss/user/082097117b4543e9a741cd2580f936d3",
+      "kind": "RSS",
+      "category": "华人AI研究者",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/082097117b4543e9a741cd2580f936d3"
+    },
+    {
+      "id": "S036",
+      "name": "Binyuan Hui(@huybery)",
+      "url": "https://api.xgo.ing/rss/user/f54b2b40185943ce8f48a880110b7bc2",
+      "kind": "RSS",
+      "category": "华人AI研究者",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 25 条",
+      "effective_url": "https://api.xgo.ing/rss/user/f54b2b40185943ce8f48a880110b7bc2"
+    },
+    {
+      "id": "S037",
+      "name": "Jim Fan(@DrJimFan)",
+      "url": "https://api.xgo.ing/rss/user/c6cfe7c0d6b74849997073233fdea840",
+      "kind": "RSS",
+      "category": "华人AI研究者",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/c6cfe7c0d6b74849997073233fdea840"
+    },
+    {
+      "id": "S038",
+      "name": "Jerry Liu(@jerryjliu0)",
+      "url": "https://api.xgo.ing/rss/user/b3d904c0d7c446558ef3a1e7f2eb362b",
+      "kind": "RSS",
+      "category": "华人AI研究者",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/b3d904c0d7c446558ef3a1e7f2eb362b"
+    },
+    {
+      "id": "S039",
+      "name": "Lilian Weng(@lilianweng)",
+      "url": "https://api.xgo.ing/rss/user/a8f7e2238039461cbc8bf55f5f194498",
+      "kind": "RSS",
+      "category": "华人AI研究者",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 32 条",
+      "effective_url": "https://api.xgo.ing/rss/user/a8f7e2238039461cbc8bf55f5f194498"
+    },
+    {
+      "id": "S040",
+      "name": "Andrew Ng(@AndrewYNg)",
+      "url": "https://api.xgo.ing/rss/user/08b5488b20bc437c8bfc317a52e5c26d",
+      "kind": "RSS",
+      "category": "华人AI研究者",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/08b5488b20bc437c8bfc317a52e5c26d"
+    },
+    {
+      "id": "S041",
+      "name": "Hung-yi Lee",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC2ggjtuuWvxrHHHiaDH1dlQ",
+      "kind": "RSS",
+      "category": "华人AI研究者",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 15 条",
+      "effective_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC2ggjtuuWvxrHHHiaDH1dlQ"
+    },
+    {
+      "id": "S042",
+      "name": "OpenAI(@OpenAI)",
+      "url": "https://api.xgo.ing/rss/user/0c0856a69f9f49cf961018c32a0b0049",
+      "kind": "RSS",
+      "category": "AI Companies",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/0c0856a69f9f49cf961018c32a0b0049"
+    },
+    {
+      "id": "S043",
+      "name": "OpenAI Developers(@OpenAIDevs)",
+      "url": "https://api.xgo.ing/rss/user/971dc1fc90da449bac23e5fad8a33d55",
+      "kind": "RSS",
+      "category": "AI Companies",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/971dc1fc90da449bac23e5fad8a33d55"
+    },
+    {
+      "id": "S044",
+      "name": "ChatGPT(@ChatGPTapp)",
+      "url": "https://api.xgo.ing/rss/user/f7992687b8d74b14bf2341eb3a0a5ec4",
+      "kind": "RSS",
+      "category": "AI Companies",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/f7992687b8d74b14bf2341eb3a0a5ec4"
+    },
+    {
+      "id": "S045",
+      "name": "Anthropic(@AnthropicAI)",
+      "url": "https://api.xgo.ing/rss/user/fc28a211471b496682feff329ec616e5",
+      "kind": "RSS",
+      "category": "AI Companies",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/fc28a211471b496682feff329ec616e5"
+    },
+    {
+      "id": "S046",
+      "name": "Claude(@claudeai)",
+      "url": "https://api.xgo.ing/rss/user/01f60d63a61b44d692cc35c7feb0b4a4",
+      "kind": "RSS",
+      "category": "AI Companies",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/01f60d63a61b44d692cc35c7feb0b4a4"
+    },
+    {
+      "id": "S047",
+      "name": "Google AI(@GoogleAI)",
+      "url": "https://api.xgo.ing/rss/user/4de0bd2d5cef4333a0260dc8157054a7",
+      "kind": "RSS",
+      "category": "AI Companies",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/4de0bd2d5cef4333a0260dc8157054a7"
+    },
+    {
+      "id": "S048",
+      "name": "Google DeepMind(@GoogleDeepMind)",
+      "url": "https://api.xgo.ing/rss/user/a99538443a484fcc846bdcc8f50745ec",
+      "kind": "RSS",
+      "category": "AI Companies",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/a99538443a484fcc846bdcc8f50745ec"
+    },
+    {
+      "id": "S049",
+      "name": "Google Gemini App(@GeminiApp)",
+      "url": "https://api.xgo.ing/rss/user/6fb337feeec44ca38b79491b971d868d",
+      "kind": "RSS",
+      "category": "AI Companies",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/6fb337feeec44ca38b79491b971d868d"
+    },
+    {
+      "id": "S050",
+      "name": "xAI(@xai)",
+      "url": "https://api.xgo.ing/rss/user/3953aa71e87a422eb9d7bf6ff1c7c43e",
+      "kind": "RSS",
+      "category": "AI Companies",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/3953aa71e87a422eb9d7bf6ff1c7c43e"
+    },
+    {
+      "id": "S051",
+      "name": "Hugging Face(@huggingface)",
+      "url": "https://api.xgo.ing/rss/user/fc16750ce50741f1b1f05ea1fb29436f",
+      "kind": "RSS",
+      "category": "AI Companies",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 48 条",
+      "effective_url": "https://api.xgo.ing/rss/user/fc16750ce50741f1b1f05ea1fb29436f"
+    },
+    {
+      "id": "S052",
+      "name": "NVIDIA AI(@NVIDIAAI)",
+      "url": "https://api.xgo.ing/rss/user/05f1492e43514dc3862a076d3697c390",
+      "kind": "RSS",
+      "category": "AI Companies",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/05f1492e43514dc3862a076d3697c390"
+    },
+    {
+      "id": "S053",
+      "name": "AI at Meta(@AIatMeta)",
+      "url": "https://api.xgo.ing/rss/user/ef7c70f9568d45f4915169fef4ce90b4",
+      "kind": "RSS",
+      "category": "AI Companies",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/ef7c70f9568d45f4915169fef4ce90b4"
+    },
+    {
+      "id": "S054",
+      "name": "Microsoft Research(@MSFTResearch)",
+      "url": "https://api.xgo.ing/rss/user/61f4b78554fb4b8fa5653ec5d924d15a",
+      "kind": "RSS",
+      "category": "AI Companies",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/61f4b78554fb4b8fa5653ec5d924d15a"
+    },
+    {
+      "id": "S055",
+      "name": "Groq Inc(@GroqInc)",
+      "url": "https://api.xgo.ing/rss/user/771b32075fe54a83bdb6966de9647b4f",
+      "kind": "RSS",
+      "category": "AI Companies",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 26 条",
+      "effective_url": "https://api.xgo.ing/rss/user/771b32075fe54a83bdb6966de9647b4f"
+    },
+    {
+      "id": "S056",
+      "name": "Cursor(@cursor_ai)",
+      "url": "https://api.xgo.ing/rss/user/5287b4e0e13a4ab7ab7b1d56f9d88960",
+      "kind": "RSS",
+      "category": "AI Companies",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/5287b4e0e13a4ab7ab7b1d56f9d88960"
+    },
+    {
+      "id": "S057",
+      "name": "Windsurf(@windsurf_ai)",
+      "url": "https://api.xgo.ing/rss/user/4a8273800ed34a069eecdb6c5c1b9ccf",
+      "kind": "RSS",
+      "category": "AI Companies",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/4a8273800ed34a069eecdb6c5c1b9ccf"
+    },
+    {
+      "id": "S058",
+      "name": "bolt.new(@boltdotnew)",
+      "url": "https://api.xgo.ing/rss/user/760ab7cd9708452c9ce1f9144b92a430",
+      "kind": "RSS",
+      "category": "AI Companies",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/760ab7cd9708452c9ce1f9144b92a430"
+    },
+    {
+      "id": "S059",
+      "name": "LangChain(@LangChainAI)",
+      "url": "https://api.xgo.ing/rss/user/862fee50a745423c87e2633b274caf1d",
+      "kind": "RSS",
+      "category": "Dev Tools",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/862fee50a745423c87e2633b274caf1d"
+    },
+    {
+      "id": "S060",
+      "name": "LlamaIndex(@llama_index)",
+      "url": "https://api.xgo.ing/rss/user/67e259bd5be544ce84bbc867eace54c2",
+      "kind": "RSS",
+      "category": "Dev Tools",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/67e259bd5be544ce84bbc867eace54c2"
+    },
+    {
+      "id": "S061",
+      "name": "ollama(@ollama)",
+      "url": "https://api.xgo.ing/rss/user/6326c63a2dfa445bbde88bea0c3112c2",
+      "kind": "RSS",
+      "category": "Dev Tools",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/6326c63a2dfa445bbde88bea0c3112c2"
+    },
+    {
+      "id": "S062",
+      "name": "Firecrawl(@firecrawl_dev)",
+      "url": "https://api.xgo.ing/rss/user/c04abb206bbf4f91b22795024d6c0614",
+      "kind": "RSS",
+      "category": "Dev Tools",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/c04abb206bbf4f91b22795024d6c0614"
+    },
+    {
+      "id": "S063",
+      "name": "Browser Use(@browser_use)",
+      "url": "https://api.xgo.ing/rss/user/b8d7530f0b294405825013bbc1cc198f",
+      "kind": "RSS",
+      "category": "Dev Tools",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/b8d7530f0b294405825013bbc1cc198f"
+    },
+    {
+      "id": "S064",
+      "name": "OpenRouter(@OpenRouterAI)",
+      "url": "https://api.xgo.ing/rss/user/e503a90c035c4b1d8f8dd34907d15bf4",
+      "kind": "RSS",
+      "category": "Dev Tools",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/e503a90c035c4b1d8f8dd34907d15bf4"
+    },
+    {
+      "id": "S065",
+      "name": "AI SDK(@aisdk)",
+      "url": "https://api.xgo.ing/rss/user/22af005b21ec45b1a4503acca777b7f0",
+      "kind": "RSS",
+      "category": "Dev Tools",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/22af005b21ec45b1a4503acca777b7f0"
+    },
+    {
+      "id": "S066",
+      "name": "DeepLearning.AI(@DeepLearningAI)",
+      "url": "https://api.xgo.ing/rss/user/42e6b4901b97498eab2ab64c07d56177",
+      "kind": "RSS",
+      "category": "Dev Tools",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/42e6b4901b97498eab2ab64c07d56177"
+    },
+    {
+      "id": "S067",
+      "name": "GitHub(@github)",
+      "url": "https://api.xgo.ing/rss/user/fa5b15f68a2e4df1ab301e26a4ab9190",
+      "kind": "RSS",
+      "category": "Dev Tools",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/fa5b15f68a2e4df1ab301e26a4ab9190"
+    },
+    {
+      "id": "S068",
+      "name": "Figma(@figma)",
+      "url": "https://api.xgo.ing/rss/user/f8a106a09a7d404fb8de7eb0c5ddd2a2",
+      "kind": "RSS",
+      "category": "Dev Tools",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/f8a106a09a7d404fb8de7eb0c5ddd2a2"
+    },
+    {
+      "id": "S069",
+      "name": "Notion(@NotionHQ)",
+      "url": "https://api.xgo.ing/rss/user/f97a26863aec4425b021720d4f8e4ede",
+      "kind": "RSS",
+      "category": "Dev Tools",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/f97a26863aec4425b021720d4f8e4ede"
+    },
+    {
+      "id": "S070",
+      "name": "NotebookLM(@NotebookLM)",
+      "url": "https://api.xgo.ing/rss/user/221a88341acb475db221a12fed8208d0",
+      "kind": "RSS",
+      "category": "Dev Tools",
+      "origin": "data/opml-feeds.json",
+      "enabled": false,
+      "historical_status": "上游快照 50 条",
+      "effective_url": "https://api.xgo.ing/rss/user/221a88341acb475db221a12fed8208d0"
+    },
+    {
+      "id": "S071",
+      "name": "机器之心",
+      "url": "https://decemberpei.cyou/rssbox/wechat-jiqizhixin.xml",
+      "kind": "微信公众号 RSS",
+      "category": "AI",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S072",
+      "name": "量子位",
+      "url": "https://decemberpei.cyou/rssbox/wechat-liangziwei.xml",
+      "kind": "微信公众号 RSS",
+      "category": "AI",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S073",
+      "name": "新智元",
+      "url": "https://decemberpei.cyou/rssbox/wechat-xinzhiyuan.xml",
+      "kind": "微信公众号 RSS",
+      "category": "AI",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S074",
+      "name": "DeepTech深科技",
+      "url": "https://decemberpei.cyou/rssbox/wechat-shenkeji.xml",
+      "kind": "微信公众号 RSS",
+      "category": "AI",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S075",
+      "name": "PaperWeekly",
+      "url": "https://decemberpei.cyou/rssbox/wechat-paperweekly.xml",
+      "kind": "微信公众号 RSS",
+      "category": "AI",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S076",
+      "name": "计算机视觉life",
+      "url": "https://decemberpei.cyou/rssbox/wechat-jisuanjishijuelife.xml",
+      "kind": "微信公众号 RSS",
+      "category": "AI",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S077",
+      "name": "AI前线",
+      "url": "https://decemberpei.cyou/rssbox/wechat-aiqianxian.xml",
+      "kind": "微信公众号 RSS",
+      "category": "AI",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S078",
+      "name": "夕小瑶科技说",
+      "url": "https://decemberpei.cyou/rssbox/wechat-xixiaoyaokejishuo.xml",
+      "kind": "微信公众号 RSS",
+      "category": "AI",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S079",
+      "name": "海外独角兽",
+      "url": "https://decemberpei.cyou/rssbox/wechat-haiwaidujiaoshou.xml",
+      "kind": "微信公众号 RSS",
+      "category": "AI",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S080",
+      "name": "甲子光年",
+      "url": "https://decemberpei.cyou/rssbox/wechat-jiaziguangnian.xml",
+      "kind": "微信公众号 RSS",
+      "category": "AI",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S081",
+      "name": "集智俱乐部",
+      "url": "https://decemberpei.cyou/rssbox/wechat-jizhijvlebu.xml",
+      "kind": "微信公众号 RSS",
+      "category": "AI",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S082",
+      "name": "晚点LatePost",
+      "url": "https://decemberpei.cyou/rssbox/wechat-wandian.xml",
+      "kind": "微信公众号 RSS",
+      "category": "科技媒体",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S083",
+      "name": "36氪",
+      "url": "https://decemberpei.cyou/rssbox/wechat-36ke.xml",
+      "kind": "微信公众号 RSS",
+      "category": "科技媒体",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S084",
+      "name": "36氪Pro",
+      "url": "https://decemberpei.cyou/rssbox/wechat-sanliukepro.xml",
+      "kind": "微信公众号 RSS",
+      "category": "科技媒体",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S085",
+      "name": "虎嗅App",
+      "url": "https://decemberpei.cyou/rssbox/wechat-huxiuapp.xml",
+      "kind": "微信公众号 RSS",
+      "category": "科技媒体",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S086",
+      "name": "极客公园",
+      "url": "https://decemberpei.cyou/rssbox/wechat-jikegongyuan.xml",
+      "kind": "微信公众号 RSS",
+      "category": "科技媒体",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S087",
+      "name": "少数派",
+      "url": "https://decemberpei.cyou/rssbox/wechat-shaoshupai.xml",
+      "kind": "微信公众号 RSS",
+      "category": "科技媒体",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S088",
+      "name": "APPSO",
+      "url": "https://decemberpei.cyou/rssbox/wechat-appso.xml",
+      "kind": "微信公众号 RSS",
+      "category": "科技媒体",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S089",
+      "name": "爱范儿",
+      "url": "https://decemberpei.cyou/rssbox/wechat-anfaner.xml",
+      "kind": "微信公众号 RSS",
+      "category": "科技媒体",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S090",
+      "name": "差评",
+      "url": "https://decemberpei.cyou/rssbox/wechat-chaping.xml",
+      "kind": "微信公众号 RSS",
+      "category": "科技媒体",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S091",
+      "name": "钛媒体",
+      "url": "https://decemberpei.cyou/rssbox/wechat-taimeiti.xml",
+      "kind": "微信公众号 RSS",
+      "category": "科技媒体",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S092",
+      "name": "InfoQ",
+      "url": "https://decemberpei.cyou/rssbox/wechat-infoq.xml",
+      "kind": "微信公众号 RSS",
+      "category": "技术开发",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S093",
+      "name": "阿里云开发者",
+      "url": "https://decemberpei.cyou/rssbox/wechat-aliyunkaifazhe.xml",
+      "kind": "微信公众号 RSS",
+      "category": "技术开发",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S094",
+      "name": "腾讯技术工程",
+      "url": "https://decemberpei.cyou/rssbox/wechat-tengxunjishugongcheng.xml",
+      "kind": "微信公众号 RSS",
+      "category": "技术开发",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S095",
+      "name": "前端之巅",
+      "url": "https://decemberpei.cyou/rssbox/wechat-qianduanzhidian.xml",
+      "kind": "微信公众号 RSS",
+      "category": "技术开发",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S096",
+      "name": "架构师之路",
+      "url": "https://decemberpei.cyou/rssbox/wechat-jiagoushizhilu.xml",
+      "kind": "微信公众号 RSS",
+      "category": "技术开发",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S097",
+      "name": "GitHubDaily",
+      "url": "https://decemberpei.cyou/rssbox/wechat-githubdaily.xml",
+      "kind": "微信公众号 RSS",
+      "category": "技术开发",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S098",
+      "name": "华尔街见闻",
+      "url": "https://decemberpei.cyou/rssbox/wechat-huaerjiejianwen.xml",
+      "kind": "微信公众号 RSS",
+      "category": "财经投资",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S099",
+      "name": "财经杂志",
+      "url": "https://decemberpei.cyou/rssbox/wechat-caijingzazhi.xml",
+      "kind": "微信公众号 RSS",
+      "category": "财经投资",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S100",
+      "name": "第一财经YiMagazine",
+      "url": "https://decemberpei.cyou/rssbox/wechat-diyicaijing.xml",
+      "kind": "微信公众号 RSS",
+      "category": "财经投资",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S101",
+      "name": "经纬创投",
+      "url": "https://decemberpei.cyou/rssbox/wechat-jingweichuangtou.xml",
+      "kind": "微信公众号 RSS",
+      "category": "财经投资",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S102",
+      "name": "红杉汇",
+      "url": "https://decemberpei.cyou/rssbox/wechat-hongshanhui.xml",
+      "kind": "微信公众号 RSS",
+      "category": "财经投资",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S103",
+      "name": "42章经",
+      "url": "https://decemberpei.cyou/rssbox/wechat-sierzhangjing.xml",
+      "kind": "微信公众号 RSS",
+      "category": "财经投资",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S104",
+      "name": "远川投资评论",
+      "url": "https://decemberpei.cyou/rssbox/wechat-chuanyuanyouzipinglun.xml",
+      "kind": "微信公众号 RSS",
+      "category": "财经投资",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S105",
+      "name": "泽平宏观展望",
+      "url": "https://decemberpei.cyou/rssbox/wechat-zepinghongguanzhanwang.xml",
+      "kind": "微信公众号 RSS",
+      "category": "财经投资",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S106",
+      "name": "caoz的梦呓",
+      "url": "https://decemberpei.cyou/rssbox/wechat-caozdemengyi.xml",
+      "kind": "微信公众号 RSS",
+      "category": "个人博主",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S107",
+      "name": "L先生说",
+      "url": "https://decemberpei.cyou/rssbox/wechat-lxianshengshuo.xml",
+      "kind": "微信公众号 RSS",
+      "category": "个人博主",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S108",
+      "name": "槽边往事",
+      "url": "https://decemberpei.cyou/rssbox/wechat-caobianwangshi.xml",
+      "kind": "微信公众号 RSS",
+      "category": "个人博主",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S109",
+      "name": "孟岩",
+      "url": "https://decemberpei.cyou/rssbox/wechat-mengyan.xml",
+      "kind": "微信公众号 RSS",
+      "category": "个人博主",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S110",
+      "name": "刘润",
+      "url": "https://decemberpei.cyou/rssbox/wechat-liurun.xml",
+      "kind": "微信公众号 RSS",
+      "category": "个人博主",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S111",
+      "name": "辉哥奇谭",
+      "url": "https://decemberpei.cyou/rssbox/wechat-huigeqitan.xml",
+      "kind": "微信公众号 RSS",
+      "category": "个人博主",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S112",
+      "name": "warfalcon",
+      "url": "https://decemberpei.cyou/rssbox/wechat-warfalcon.xml",
+      "kind": "微信公众号 RSS",
+      "category": "个人博主",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S113",
+      "name": "玉树芝兰",
+      "url": "https://decemberpei.cyou/rssbox/wechat-yushuzhilan.xml",
+      "kind": "微信公众号 RSS",
+      "category": "个人博主",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S114",
+      "name": "九边",
+      "url": "https://decemberpei.cyou/rssbox/wechat-jiubian.xml",
+      "kind": "微信公众号 RSS",
+      "category": "个人博主",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S115",
+      "name": "也谈钱",
+      "url": "https://decemberpei.cyou/rssbox/wechat-yetanqian.xml",
+      "kind": "微信公众号 RSS",
+      "category": "个人博主",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S116",
+      "name": "keso怎么看",
+      "url": "https://decemberpei.cyou/rssbox/wechat-kesozenmekan.xml",
+      "kind": "微信公众号 RSS",
+      "category": "个人博主",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S117",
+      "name": "阑夕",
+      "url": "https://decemberpei.cyou/rssbox/wechat-lanxi.xml",
+      "kind": "微信公众号 RSS",
+      "category": "个人博主",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S118",
+      "name": "人人都是产品经理",
+      "url": "https://decemberpei.cyou/rssbox/wechat-renrendoushichanpinjingli.xml",
+      "kind": "微信公众号 RSS",
+      "category": "产品商业",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S119",
+      "name": "互联网怪盗团",
+      "url": "https://decemberpei.cyou/rssbox/wechat-hulianwangguaidaotuan.xml",
+      "kind": "微信公众号 RSS",
+      "category": "产品商业",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S120",
+      "name": "乱翻书",
+      "url": "https://decemberpei.cyou/rssbox/wechat-luanfanshu.xml",
+      "kind": "微信公众号 RSS",
+      "category": "产品商业",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S121",
+      "name": "刘言飞语",
+      "url": "https://decemberpei.cyou/rssbox/wechat-liuyanfeiyu.xml",
+      "kind": "微信公众号 RSS",
+      "category": "产品商业",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S122",
+      "name": "产品犬舍",
+      "url": "https://decemberpei.cyou/rssbox/wechat-chanpinquanshe.xml",
+      "kind": "微信公众号 RSS",
+      "category": "产品商业",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S123",
+      "name": "FounderPark",
+      "url": "https://decemberpei.cyou/rssbox/wechat-founderpark.xml",
+      "kind": "微信公众号 RSS",
+      "category": "产品商业",
+      "origin": "src/fetchers/wechat-rss.ts",
+      "enabled": false
+    },
+    {
+      "id": "S124",
+      "name": "Peter Yang",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCnpBg7yqNauHtlNSpOl5-cg",
+      "kind": "YouTube RSS",
+      "category": "视频",
+      "origin": "src/fetchers/youtube.ts",
+      "enabled": false,
+      "home_url": "https://www.youtube.com/channel/UCnpBg7yqNauHtlNSpOl5-cg"
+    },
+    {
+      "id": "S125",
+      "name": "Lenny's Podcast",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC6t1O76G0jYXOAoYCm153dA",
+      "kind": "YouTube RSS",
+      "category": "视频",
+      "origin": "src/fetchers/youtube.ts",
+      "enabled": false,
+      "home_url": "https://www.youtube.com/channel/UC6t1O76G0jYXOAoYCm153dA"
+    },
+    {
+      "id": "S126",
+      "name": "20VC",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCf0PBRjhf0rF8fWBIxTuoWA",
+      "kind": "YouTube RSS",
+      "category": "视频",
+      "origin": "src/fetchers/youtube.ts",
+      "enabled": false,
+      "home_url": "https://www.youtube.com/channel/UCf0PBRjhf0rF8fWBIxTuoWA"
+    },
+    {
+      "id": "S127",
+      "name": "OpenAI News",
+      "url": "https://openai.com/news/rss.xml",
+      "kind": "示例 RSS",
+      "category": "OPML 示例",
+      "origin": "feeds/follow.example.opml",
+      "enabled": false,
+      "home_url": "https://openai.com/news"
+    },
+    {
+      "id": "S128",
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "kind": "示例 RSS",
+      "category": "OPML 示例",
+      "origin": "feeds/follow.example.opml",
+      "enabled": false,
+      "home_url": "https://huggingface.co/blog"
+    },
+    {
+      "id": "S129",
+      "name": "InfoQ CN",
+      "url": "https://www.infoq.cn/feed",
+      "kind": "示例 RSS",
+      "category": "OPML 示例",
+      "origin": "feeds/follow.example.opml",
+      "enabled": false,
+      "home_url": "https://www.infoq.cn/"
+    },
+    {
+      "id": "S130",
+      "name": "AI今日热榜",
+      "url": "https://aihot.today/",
+      "kind": "网页聚合",
+      "category": "平台与接口",
+      "origin": "src/fetchers/aihot.ts",
+      "enabled": false
+    },
+    {
+      "id": "S131",
+      "name": "TechURLs",
+      "url": "https://techurls.com/",
+      "kind": "网页聚合",
+      "category": "平台与接口",
+      "origin": "src/fetchers/techurls.ts",
+      "enabled": false
+    },
+    {
+      "id": "S132",
+      "name": "NewsNow",
+      "url": "https://newsnow.busiyi.world/",
+      "kind": "网页入口",
+      "category": "平台与接口",
+      "origin": "src/fetchers/newsnow.ts",
+      "enabled": false
+    },
+    {
+      "id": "S133",
+      "name": "NewsNow 批量 API",
+      "url": "https://newsnow.busiyi.world/api/s/entire",
+      "kind": "POST API",
+      "category": "平台与接口",
+      "origin": "src/fetchers/newsnow.ts",
+      "enabled": false
+    },
+    {
+      "id": "S134",
+      "name": "NewsNow 单源 API",
+      "url": "https://newsnow.busiyi.world/api/s?id=${sid}",
+      "kind": "GET API 模板",
+      "category": "平台与接口",
+      "origin": "src/fetchers/newsnow.ts",
+      "enabled": false
+    },
+    {
+      "id": "S135",
+      "name": "TopHub",
+      "url": "https://tophub.today/",
+      "kind": "网页聚合",
+      "category": "平台与接口",
+      "origin": "src/fetchers/tophub.ts",
+      "enabled": false
+    },
+    {
+      "id": "S136",
+      "name": "Buzzing",
+      "url": "https://www.buzzing.cc/feed.json",
+      "kind": "JSON Feed",
+      "category": "平台与接口",
+      "origin": "src/fetchers/buzzing.ts",
+      "enabled": false
+    },
+    {
+      "id": "S137",
+      "name": "Info Flow",
+      "url": "https://iris.findtruman.io/web/info_flow",
+      "kind": "动态发现 RSS",
+      "category": "平台与接口",
+      "origin": "src/fetchers/iris.ts",
+      "enabled": false
+    },
+    {
+      "id": "S138",
+      "name": "Zeli",
+      "url": "https://zeli.app/api/hacker-news?type=hot24h",
+      "kind": "GET API",
+      "category": "平台与接口",
+      "origin": "src/fetchers/zeli.ts",
+      "enabled": false
+    },
+    {
+      "id": "S139",
+      "name": "AI HubToday",
+      "url": "https://ai.hubtoday.app/",
+      "kind": "网页日报",
+      "category": "平台与接口",
+      "origin": "src/fetchers/aihubtoday.ts",
+      "enabled": false
+    },
+    {
+      "id": "S140",
+      "name": "AIbase",
+      "url": "https://www.aibase.com/zh/news",
+      "kind": "网页聚合",
+      "category": "平台与接口",
+      "origin": "src/fetchers/aibase.ts",
+      "enabled": false
+    },
+    {
+      "id": "S141",
+      "name": "BestBlogs",
+      "url": "https://api.bestblogs.dev/api/newsletter/list",
+      "kind": "POST API",
+      "category": "平台与接口",
+      "origin": "src/fetchers/bestblogs.ts",
+      "enabled": false
+    },
+    {
+      "id": "S142",
+      "name": "BestBlogs 阅读地址",
+      "url": "https://www.bestblogs.dev/en/newsletter#${issueId}",
+      "kind": "输出链接模板",
+      "category": "平台与接口",
+      "origin": "src/fetchers/bestblogs.ts",
+      "enabled": false
+    },
+    {
+      "id": "S143",
+      "name": "新智元",
+      "url": "https://aiera.com.cn/wp-json/wp/v2/posts?per_page=100&page=${page}",
+      "kind": "分页 GET API",
+      "category": "平台与接口",
+      "origin": "src/fetchers/xinzhiyuan.ts",
+      "enabled": false
+    },
+    {
+      "id": "S144",
+      "name": "WaytoAGI",
+      "url": "https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e?fromScene=spaceOverview",
+      "kind": "飞书知识库",
+      "category": "平台与接口",
+      "origin": "src/config.ts",
+      "enabled": false
+    },
+    {
+      "id": "S145",
+      "name": "WaytoAGI 历史更新",
+      "url": "https://waytoagi.feishu.cn/wiki/FjiOwWp2giA7hRk6jjfcPioCnAc",
+      "kind": "飞书备用入口",
+      "category": "平台与接口",
+      "origin": "src/config.ts",
+      "enabled": false
+    },
+    {
+      "id": "S146",
+      "name": "Hacker News 时间补全",
+      "url": "https://hacker-news.firebaseio.com/v0/item/${id}.json",
+      "kind": "辅助 API 模板",
+      "category": "平台与接口",
+      "origin": "src/fetchers/newsnow.ts",
+      "enabled": false
+    },
+    {
+      "id": "S147",
+      "name": "GitHub 时间补全",
+      "url": "https://api.github.com/repos/${cleanPath}",
+      "kind": "辅助 API 模板",
+      "category": "平台与接口",
+      "origin": "src/fetchers/newsnow.ts",
+      "enabled": false
+    },
+    {
+      "id": "S148",
+      "name": "少数派时间补全",
+      "url": "https://sspai.com/feed",
+      "kind": "辅助 RSS",
+      "category": "平台与接口",
+      "origin": "src/fetchers/newsnow.ts",
+      "enabled": false
+    },
+    {
+      "id": "S149",
+      "name": "https://rsshub.app/infoq/recommend",
+      "url": "https://www.infoq.cn/feed",
+      "kind": "替换 RSS",
+      "category": "原项目替换规则",
+      "origin": "src/config.ts",
+      "enabled": false,
+      "original_url": "https://rsshub.app/infoq/recommend"
+    },
+    {
+      "id": "S150",
+      "name": "https://rsshub.app/huggingface/blog-zh",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "kind": "替换 RSS",
+      "category": "原项目替换规则",
+      "origin": "src/config.ts",
+      "enabled": false,
+      "original_url": "https://rsshub.app/huggingface/blog-zh"
+    },
+    {
+      "id": "S151",
+      "name": "https://rsshub.app/readhub/daily",
+      "url": "https://readhub.cn/rss",
+      "kind": "替换 RSS",
+      "category": "原项目替换规则",
+      "origin": "src/config.ts",
+      "enabled": false,
+      "original_url": "https://rsshub.app/readhub/daily"
+    },
+    {
+      "id": "S152",
+      "name": "https://rsshub.app/36kr/hot-list",
+      "url": "https://36kr.com/feed",
+      "kind": "替换 RSS",
+      "category": "原项目替换规则",
+      "origin": "src/config.ts",
+      "enabled": false,
+      "original_url": "https://rsshub.app/36kr/hot-list"
+    },
+    {
+      "id": "S153",
+      "name": "https://rsshub.app/sspai/index",
+      "url": "https://sspai.com/feed",
+      "kind": "替换 RSS",
+      "category": "原项目替换规则",
+      "origin": "src/config.ts",
+      "enabled": false,
+      "original_url": "https://rsshub.app/sspai/index"
+    },
+    {
+      "id": "S154",
+      "name": "https://rsshub.app/sspai/matrix",
+      "url": "https://sspai.com/feed",
+      "kind": "替换 RSS",
+      "category": "原项目替换规则",
+      "origin": "src/config.ts",
+      "enabled": false,
+      "original_url": "https://rsshub.app/sspai/matrix"
+    },
+    {
+      "id": "S155",
+      "name": "https://rsshub.app/meituan/tech",
+      "url": "https://tech.meituan.com/feed",
+      "kind": "替换 RSS",
+      "category": "原项目替换规则",
+      "origin": "src/config.ts",
+      "enabled": false,
+      "original_url": "https://rsshub.app/meituan/tech"
+    },
+    {
+      "id": "S156",
+      "name": "https://mjg59.dreamwidth.org/data/rss",
+      "url": "http://mjg59.dreamwidth.org/data/rss",
+      "kind": "替换 RSS",
+      "category": "原项目替换规则",
+      "origin": "src/config.ts",
+      "enabled": false,
+      "original_url": "https://mjg59.dreamwidth.org/data/rss"
+    },
+    {
+      "id": "S157",
+      "name": "https://rsshub.app/telegram/channel/",
+      "url": "https://rsshub.app/telegram/channel/",
+      "kind": "跳过前缀",
+      "category": "原项目跳过规则",
+      "origin": "src/config.ts",
+      "enabled": false
+    },
+    {
+      "id": "S158",
+      "name": "https://rsshub.app/jike/",
+      "url": "https://rsshub.app/jike/",
+      "kind": "跳过前缀",
+      "category": "原项目跳过规则",
+      "origin": "src/config.ts",
+      "enabled": false
+    },
+    {
+      "id": "S159",
+      "name": "https://rsshub.app/bilibili/",
+      "url": "https://rsshub.app/bilibili/",
+      "kind": "跳过前缀",
+      "category": "原项目跳过规则",
+      "origin": "src/config.ts",
+      "enabled": false
+    },
+    {
+      "id": "S160",
+      "name": "https://rsshub.app/zhihu/",
+      "url": "https://rsshub.app/zhihu/",
+      "kind": "跳过前缀",
+      "category": "原项目跳过规则",
+      "origin": "src/config.ts",
+      "enabled": false
+    },
+    {
+      "id": "S161",
+      "name": "https://rsshub.app/xiaoyuzhou/podcast/",
+      "url": "https://rsshub.app/xiaoyuzhou/podcast/",
+      "kind": "跳过前缀",
+      "category": "原项目跳过规则",
+      "origin": "src/config.ts",
+      "enabled": false
+    },
+    {
+      "id": "S162",
+      "name": "https://rsshub.app/xyzrank",
+      "url": "https://rsshub.app/xyzrank",
+      "kind": "跳过前缀",
+      "category": "原项目跳过规则",
+      "origin": "src/config.ts",
+      "enabled": false
+    },
+    {
+      "id": "S163",
+      "name": "https://rsshub.app/mittrchina/hot",
+      "url": "https://rsshub.app/mittrchina/hot",
+      "kind": "跳过前缀",
+      "category": "原项目跳过规则",
+      "origin": "src/config.ts",
+      "enabled": false
+    },
+    {
+      "id": "S164",
+      "name": "https://wechat2rss.bestblogs.dev/",
+      "url": "https://wechat2rss.bestblogs.dev/",
+      "kind": "跳过前缀",
+      "category": "原项目跳过规则",
+      "origin": "src/config.ts",
+      "enabled": false
+    },
+    {
+      "id": "S165",
+      "name": "https://werss.bestblogs.dev/",
+      "url": "https://werss.bestblogs.dev/",
+      "kind": "跳过前缀",
+      "category": "原项目跳过规则",
+      "origin": "src/config.ts",
+      "enabled": false
+    },
+    {
+      "id": "S166",
+      "name": "http://47.122.94.119:18080/",
+      "url": "http://47.122.94.119:18080/",
+      "kind": "跳过前缀",
+      "category": "原项目跳过规则",
+      "origin": "src/config.ts",
+      "enabled": false
+    },
+    {
+      "id": "S167",
+      "name": "https://rachelbythebay.com/w/atom.xml",
+      "url": "https://rachelbythebay.com/w/atom.xml",
+      "kind": "跳过地址",
+      "category": "原项目跳过规则",
+      "origin": "src/config.ts",
+      "enabled": false
+    },
+    {
+      "id": "S168",
+      "name": "https://flak.tedunangst.com/rss",
+      "url": "https://flak.tedunangst.com/rss",
+      "kind": "跳过地址",
+      "category": "原项目跳过规则",
+      "origin": "src/config.ts",
+      "enabled": false
+    }
+  ]
+}

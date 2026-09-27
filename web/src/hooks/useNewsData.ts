@@ -1,0 +1,233 @@
+// 保留参考站点的数据筛选与分页逻辑，仅把数据地址改为 SpiderAI 接口。
+import { useState, useEffect, useMemo, useCallback, useRef } from 'react'
+import type { NewsData, NewsItem, SiteStat } from '../types'
+
+export interface SourceStat {
+  source: string
+  count: number
+}
+
+export type TimeRange = '24h' | '7d'
+
+interface UseNewsDataReturn {
+  data: NewsData | null
+  loading: boolean
+  error: string | null
+  filteredItems: NewsItem[]
+  siteStats: SiteStat[]
+  sourceStats: SourceStat[]
+  searchQuery: string
+  setSearchQuery: (query: string) => void
+  selectedSite: string
+  setSelectedSite: (site: string) => void
+  selectedSource: string
+  setSelectedSource: (source: string) => void
+  loadMore: () => void
+  hasMore: boolean
+  displayCount: number
+  refresh: () => void
+  timeRange: TimeRange
+  setTimeRange: (range: TimeRange) => void
+  isSwitching: boolean
+}
+
+const PAGE_SIZE = 50
+
+/** 管理两种时间范围的数据、来源筛选、搜索和分页。 */
+export function useNewsData(): UseNewsDataReturn {
+  const [data, setData] = useState<NewsData | null>(null)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+  const [searchQuery, setSearchQuery] = useState('')
+  const [selectedSite, setSelectedSite] = useState('all')
+  const [selectedSource, setSelectedSource] = useState('all')
+  const [displayCount, setDisplayCount] = useState(PAGE_SIZE)
+  const [timeRange, setTimeRange] = useState<TimeRange>('24h')
+  const [isSwitching, setIsSwitching] = useState(false)
+  
+  const preloadedDataRef = useRef<{ [key in TimeRange]?: NewsData }>({})
+  const isInitialLoadRef = useRef(true)
+  const abortControllerRef = useRef<AbortController | null>(null)
+
+  // 手动刷新必须绕过预加载缓存，才能看到刚写入的采集快照。
+  const fetchData = useCallback(async (range: TimeRange, isPreload = false, force = false) => {
+    if (preloadedDataRef.current[range] && !isPreload && !force) {
+      setData(preloadedDataRef.current[range]!)
+      setLoading(false)
+      setIsSwitching(false)
+      return
+    }
+
+    if (!isPreload) {
+      if (abortControllerRef.current) {
+        abortControllerRef.current.abort()
+      }
+      abortControllerRef.current = new AbortController()
+      
+      if (isInitialLoadRef.current) {
+        setLoading(true)
+      } else {
+        setIsSwitching(true)
+      }
+      setError(null)
+    }
+
+    try {
+      const signal = isPreload ? undefined : abortControllerRef.current?.signal
+      
+      const response = await fetch(`/api/news?range=${range}`, { signal, cache: 'no-store' })
+      if (!response.ok) {
+        throw new Error('数据加载失败')
+      }
+      const json = await response.json()
+      
+      preloadedDataRef.current[range] = json
+      
+      if (!isPreload) {
+        setData(json)
+        isInitialLoadRef.current = false
+      }
+    } catch (err) {
+      if (err instanceof Error && err.name === 'AbortError') {
+        return
+      }
+      if (!isPreload) {
+        setError(err instanceof Error ? err.message : '未知错误')
+      }
+    } finally {
+      if (!isPreload) {
+        setLoading(false)
+        setIsSwitching(false)
+      }
+    }
+  }, [])
+
+  useEffect(() => {
+    fetchData(timeRange)
+    return () => {
+      abortControllerRef.current?.abort()
+    }
+  }, [timeRange, fetchData])
+
+  useEffect(() => {
+    if (!isInitialLoadRef.current && !preloadedDataRef.current['7d']) {
+      fetchData('7d', true)
+    }
+  }, [data, fetchData])
+
+  const handleTimeRangeChange = useCallback((range: TimeRange) => {
+    setTimeRange(range)
+    setDisplayCount(PAGE_SIZE)
+    setSelectedSite('all')
+    setSelectedSource('all')
+    setSearchQuery('')
+  }, [])
+
+  const sourceStats = useMemo(() => {
+    if (!data?.items || selectedSite === 'all') return []
+    
+    const sourceMap = new Map<string, number>()
+    data.items
+      .filter(item => item.site_id === selectedSite)
+      .forEach(item => {
+        sourceMap.set(item.source, (sourceMap.get(item.source) || 0) + 1)
+      })
+    
+    return Array.from(sourceMap.entries())
+      .map(([source, count]) => ({ source, count }))
+      .sort((a, b) => b.count - a.count)
+  }, [data, selectedSite])
+
+  const filteredItems = useMemo(() => {
+    if (!data?.items) return []
+    
+    let items = data.items
+    
+    if (selectedSite !== 'all') {
+      items = items.filter(item => item.site_id === selectedSite)
+    }
+
+    if (selectedSource !== 'all') {
+      items = items.filter(item => item.source === selectedSource)
+    }
+    
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase()
+      items = items.filter(item => 
+        item.title.toLowerCase().includes(query) ||
+        item.source.toLowerCase().includes(query) ||
+        (item.title_zh && item.title_zh.toLowerCase().includes(query))
+      )
+    }
+    
+    return items.slice(0, displayCount)
+  }, [data, selectedSite, selectedSource, searchQuery, displayCount])
+
+  const totalFiltered = useMemo(() => {
+    if (!data?.items) return 0
+    
+    let items = data.items
+    
+    if (selectedSite !== 'all') {
+      items = items.filter(item => item.site_id === selectedSite)
+    }
+
+    if (selectedSource !== 'all') {
+      items = items.filter(item => item.source === selectedSource)
+    }
+    
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase()
+      items = items.filter(item => 
+        item.title.toLowerCase().includes(query) ||
+        item.source.toLowerCase().includes(query) ||
+        (item.title_zh && item.title_zh.toLowerCase().includes(query))
+      )
+    }
+    
+    return items.length
+  }, [data, selectedSite, selectedSource, searchQuery])
+
+  const loadMore = () => {
+    setDisplayCount(prev => prev + PAGE_SIZE)
+  }
+
+  const hasMore = displayCount < totalFiltered
+
+  const refresh = () => {
+    setDisplayCount(PAGE_SIZE)
+    // 另一时间范围也要失效，避免切换后仍显示旧快照。
+    preloadedDataRef.current = {}
+    fetchData(timeRange, false, true)
+  }
+
+  useEffect(() => {
+    setDisplayCount(PAGE_SIZE)
+  }, [selectedSite, selectedSource, searchQuery])
+
+  useEffect(() => {
+    setSelectedSource('all')
+  }, [selectedSite])
+
+  return {
+    data,
+    loading,
+    error,
+    filteredItems,
+    siteStats: data?.site_stats || [],
+    sourceStats,
+    searchQuery,
+    setSearchQuery,
+    selectedSite,
+    setSelectedSite,
+    selectedSource,
+    setSelectedSource,
+    loadMore,
+    hasMore,
+    displayCount,
+    refresh,
+    timeRange,
+    setTimeRange: handleTimeRangeChange,
+    isSwitching
+  }
+}

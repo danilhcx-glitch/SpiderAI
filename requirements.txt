@@ -1,0 +1,5 @@
+requests>=2.32,<3
+python-dotenv>=1.0,<2
+# RSS/Atom 解析与静态网页正文提取。
+feedparser>=6.0,<7
+beautifulsoup4>=4.12,<5

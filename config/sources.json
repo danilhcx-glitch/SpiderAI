@@ -1,0 +1,1039 @@
+{
+  "rss": [
+    {
+      "reference_id": "S001",
+      "name": "量子位",
+      "url": "https://www.qbitai.com/feed",
+      "category": "中文博客",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S002",
+      "name": "宝玉的分享",
+      "url": "https://baoyu.io/feed.xml",
+      "category": "中文博客",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S003",
+      "name": "爱范儿",
+      "url": "http://www.ifanr.com/feed",
+      "category": "中文博客",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S004",
+      "name": "阮一峰的网络日志",
+      "url": "http://feeds.feedburner.com/ruanyifeng",
+      "category": "中文博客",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S005",
+      "name": "美团技术团队",
+      "url": "https://tech.meituan.com/feed/",
+      "category": "中文博客",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S006",
+      "name": "SuperTechFans",
+      "url": "https://www.supertechfans.com/cn/index.xml",
+      "category": "中文博客",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S007",
+      "name": "掘金本周最热",
+      "url": "https://rsshub.bestblogs.dev/juejin/trending/all/weekly",
+      "category": "中文聚合",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S008",
+      "name": "李继刚(@lijigang_com)",
+      "url": "https://api.xgo.ing/rss/user/ca2fa444b6ea4b8b974fe148056e497a",
+      "category": "中文Twitter博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S009",
+      "name": "宝玉(@dotey)",
+      "url": "https://api.xgo.ing/rss/user/97f1484ae48c430fbbf3438099743674",
+      "category": "中文Twitter博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S010",
+      "name": "歸藏(guizang.ai)(@op7418)",
+      "url": "https://api.xgo.ing/rss/user/831fac36aa0a49a9af79f35dc1c9b5d9",
+      "category": "中文Twitter博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S011",
+      "name": "小互(@imxiaohu)",
+      "url": "https://api.xgo.ing/rss/user/74e542992cf7441390c708f5601071d4",
+      "category": "中文Twitter博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S012",
+      "name": "向阳乔木(@vista8)",
+      "url": "https://api.xgo.ing/rss/user/9de19c78f7454ad08c956c1a00d237fe",
+      "category": "中文Twitter博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S013",
+      "name": "AI产品黄叔(@PMbackttfuture)",
+      "url": "https://api.xgo.ing/rss/user/5b632b7fba274f62928cdcc9d3db4c5e",
+      "category": "中文Twitter博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S014",
+      "name": "idoubi(@idoubicc)",
+      "url": "https://api.xgo.ing/rss/user/3d72acd51d21414ea39871fc01982a65",
+      "category": "中文Twitter博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S015",
+      "name": "Viking(@vikingmute)",
+      "url": "https://api.xgo.ing/rss/user/aab44cb2665a49258cd81f63b0b55192",
+      "category": "中文Twitter博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S016",
+      "name": "Geek(@geekbb)",
+      "url": "https://api.xgo.ing/rss/user/9cb3b60e689e4445a7fbdfd0be144126",
+      "category": "中文Twitter博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S017",
+      "name": "Tw93(@HiTw93)",
+      "url": "https://api.xgo.ing/rss/user/665fc88440fd4436acbc2e630d824926",
+      "category": "中文Twitter博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S018",
+      "name": "Yangyi(@Yangyixxxx)",
+      "url": "https://api.xgo.ing/rss/user/66c40de71a9842fda4853b7d9d1d20da",
+      "category": "中文Twitter博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S019",
+      "name": "hidecloud(@hidecloud)",
+      "url": "https://api.xgo.ing/rss/user/23d41992b29340788aa3d09d8364c5f5",
+      "category": "中文Twitter博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S020",
+      "name": "cat(@_catwu)",
+      "url": "https://api.xgo.ing/rss/user/66a6b39ddcfa42e39621e0ab293c1bdd",
+      "category": "中文Twitter博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S021",
+      "name": "meng shao(@shao__meng)",
+      "url": "https://api.xgo.ing/rss/user/48aae530e0bf413aa7d44380f418e2e3",
+      "category": "中文Twitter博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S022",
+      "name": "Eric Jing(@ericjing_ai)",
+      "url": "https://api.xgo.ing/rss/user/ddfdcdd4e390495c942f0b5da62af0fb",
+      "category": "中文Twitter博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S023",
+      "name": "Qwen(@Alibaba_Qwen)",
+      "url": "https://api.xgo.ing/rss/user/80032d016d654eb4afe741ff34b7643d",
+      "category": "中国AI公司",
+      "enabled": true,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S024",
+      "name": "DeepSeek(@deepseek_ai)",
+      "url": "https://api.xgo.ing/rss/user/68b610deb24b47ae9a236811563cda86",
+      "category": "中国AI公司",
+      "enabled": true,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S025",
+      "name": "Hunyuan(@TXhunyuan)",
+      "url": "https://api.xgo.ing/rss/user/6e8e7b42cb434818810f87bcf77d86fb",
+      "category": "中国AI公司",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S026",
+      "name": "Skywork(@Skywork_ai)",
+      "url": "https://api.xgo.ing/rss/user/6d7d398dd80b48d79669c92745d32cf6",
+      "category": "中国AI公司",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S027",
+      "name": "Kling AI(@Kling_ai)",
+      "url": "https://api.xgo.ing/rss/user/564237c3de274d58a04f064920817888",
+      "category": "中国AI公司",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S028",
+      "name": "Hailuo AI (MiniMax)(@Hailuo_AI)",
+      "url": "https://api.xgo.ing/rss/user/e65b5e59fcb544918c1ba17f5758f0f8",
+      "category": "中国AI公司",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S029",
+      "name": "Fish Audio(@FishAudio)",
+      "url": "https://api.xgo.ing/rss/user/4900b3dcd592424687582ff9e0f148ea",
+      "category": "中国AI公司",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S030",
+      "name": "Monica_IM(@hey_im_monica)",
+      "url": "https://api.xgo.ing/rss/user/5d749cc613ec4069bb2a47334739e1b6",
+      "category": "中国AI公司",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S031",
+      "name": "Dify(@dify_ai)",
+      "url": "https://api.xgo.ing/rss/user/0be252fedbe84ad7bea21be44b18da89",
+      "category": "中国AI公司",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S032",
+      "name": "Jina AI(@JinaAI_)",
+      "url": "https://api.xgo.ing/rss/user/f510f6e7eecf456ca7e2895a46752888",
+      "category": "中国AI公司",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S033",
+      "name": "Milvus(@milvusio)",
+      "url": "https://api.xgo.ing/rss/user/424e67b19eed4500b7a440976bbd2ade",
+      "category": "中国AI公司",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S034",
+      "name": "Fei-Fei Li(@drfeifei)",
+      "url": "https://api.xgo.ing/rss/user/a4bfe44bfc0d4c949da21ebd3f5f42a5",
+      "category": "华人AI研究者",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S035",
+      "name": "Junyang Lin(@JustinLin610)",
+      "url": "https://api.xgo.ing/rss/user/082097117b4543e9a741cd2580f936d3",
+      "category": "华人AI研究者",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S036",
+      "name": "Binyuan Hui(@huybery)",
+      "url": "https://api.xgo.ing/rss/user/f54b2b40185943ce8f48a880110b7bc2",
+      "category": "华人AI研究者",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S037",
+      "name": "Jim Fan(@DrJimFan)",
+      "url": "https://api.xgo.ing/rss/user/c6cfe7c0d6b74849997073233fdea840",
+      "category": "华人AI研究者",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S038",
+      "name": "Jerry Liu(@jerryjliu0)",
+      "url": "https://api.xgo.ing/rss/user/b3d904c0d7c446558ef3a1e7f2eb362b",
+      "category": "华人AI研究者",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S039",
+      "name": "Lilian Weng(@lilianweng)",
+      "url": "https://api.xgo.ing/rss/user/a8f7e2238039461cbc8bf55f5f194498",
+      "category": "华人AI研究者",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S040",
+      "name": "Andrew Ng(@AndrewYNg)",
+      "url": "https://api.xgo.ing/rss/user/08b5488b20bc437c8bfc317a52e5c26d",
+      "category": "华人AI研究者",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S041",
+      "name": "Hung-yi Lee",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC2ggjtuuWvxrHHHiaDH1dlQ",
+      "category": "华人AI研究者",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S042",
+      "name": "OpenAI(@OpenAI)",
+      "url": "https://api.xgo.ing/rss/user/0c0856a69f9f49cf961018c32a0b0049",
+      "category": "AI Companies",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S043",
+      "name": "OpenAI Developers(@OpenAIDevs)",
+      "url": "https://api.xgo.ing/rss/user/971dc1fc90da449bac23e5fad8a33d55",
+      "category": "AI Companies",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S044",
+      "name": "ChatGPT(@ChatGPTapp)",
+      "url": "https://api.xgo.ing/rss/user/f7992687b8d74b14bf2341eb3a0a5ec4",
+      "category": "AI Companies",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S045",
+      "name": "Anthropic(@AnthropicAI)",
+      "url": "https://api.xgo.ing/rss/user/fc28a211471b496682feff329ec616e5",
+      "category": "AI Companies",
+      "enabled": true,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S046",
+      "name": "Claude(@claudeai)",
+      "url": "https://api.xgo.ing/rss/user/01f60d63a61b44d692cc35c7feb0b4a4",
+      "category": "AI Companies",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S047",
+      "name": "Google AI(@GoogleAI)",
+      "url": "https://api.xgo.ing/rss/user/4de0bd2d5cef4333a0260dc8157054a7",
+      "category": "AI Companies",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S048",
+      "name": "Google DeepMind(@GoogleDeepMind)",
+      "url": "https://api.xgo.ing/rss/user/a99538443a484fcc846bdcc8f50745ec",
+      "category": "AI Companies",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S049",
+      "name": "Google Gemini App(@GeminiApp)",
+      "url": "https://api.xgo.ing/rss/user/6fb337feeec44ca38b79491b971d868d",
+      "category": "AI Companies",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S050",
+      "name": "xAI(@xai)",
+      "url": "https://api.xgo.ing/rss/user/3953aa71e87a422eb9d7bf6ff1c7c43e",
+      "category": "AI Companies",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S051",
+      "name": "Hugging Face(@huggingface)",
+      "url": "https://api.xgo.ing/rss/user/fc16750ce50741f1b1f05ea1fb29436f",
+      "category": "AI Companies",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S052",
+      "name": "NVIDIA AI(@NVIDIAAI)",
+      "url": "https://api.xgo.ing/rss/user/05f1492e43514dc3862a076d3697c390",
+      "category": "AI Companies",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S053",
+      "name": "AI at Meta(@AIatMeta)",
+      "url": "https://api.xgo.ing/rss/user/ef7c70f9568d45f4915169fef4ce90b4",
+      "category": "AI Companies",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S054",
+      "name": "Microsoft Research(@MSFTResearch)",
+      "url": "https://api.xgo.ing/rss/user/61f4b78554fb4b8fa5653ec5d924d15a",
+      "category": "AI Companies",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S055",
+      "name": "Groq Inc(@GroqInc)",
+      "url": "https://api.xgo.ing/rss/user/771b32075fe54a83bdb6966de9647b4f",
+      "category": "AI Companies",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S056",
+      "name": "Cursor(@cursor_ai)",
+      "url": "https://api.xgo.ing/rss/user/5287b4e0e13a4ab7ab7b1d56f9d88960",
+      "category": "AI Companies",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S057",
+      "name": "Windsurf(@windsurf_ai)",
+      "url": "https://api.xgo.ing/rss/user/4a8273800ed34a069eecdb6c5c1b9ccf",
+      "category": "AI Companies",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S058",
+      "name": "bolt.new(@boltdotnew)",
+      "url": "https://api.xgo.ing/rss/user/760ab7cd9708452c9ce1f9144b92a430",
+      "category": "AI Companies",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S059",
+      "name": "LangChain(@LangChainAI)",
+      "url": "https://api.xgo.ing/rss/user/862fee50a745423c87e2633b274caf1d",
+      "category": "Dev Tools",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S060",
+      "name": "LlamaIndex(@llama_index)",
+      "url": "https://api.xgo.ing/rss/user/67e259bd5be544ce84bbc867eace54c2",
+      "category": "Dev Tools",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S061",
+      "name": "ollama(@ollama)",
+      "url": "https://api.xgo.ing/rss/user/6326c63a2dfa445bbde88bea0c3112c2",
+      "category": "Dev Tools",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S062",
+      "name": "Firecrawl(@firecrawl_dev)",
+      "url": "https://api.xgo.ing/rss/user/c04abb206bbf4f91b22795024d6c0614",
+      "category": "Dev Tools",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S063",
+      "name": "Browser Use(@browser_use)",
+      "url": "https://api.xgo.ing/rss/user/b8d7530f0b294405825013bbc1cc198f",
+      "category": "Dev Tools",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S064",
+      "name": "OpenRouter(@OpenRouterAI)",
+      "url": "https://api.xgo.ing/rss/user/e503a90c035c4b1d8f8dd34907d15bf4",
+      "category": "Dev Tools",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S065",
+      "name": "AI SDK(@aisdk)",
+      "url": "https://api.xgo.ing/rss/user/22af005b21ec45b1a4503acca777b7f0",
+      "category": "Dev Tools",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S066",
+      "name": "DeepLearning.AI(@DeepLearningAI)",
+      "url": "https://api.xgo.ing/rss/user/42e6b4901b97498eab2ab64c07d56177",
+      "category": "Dev Tools",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S067",
+      "name": "GitHub(@github)",
+      "url": "https://api.xgo.ing/rss/user/fa5b15f68a2e4df1ab301e26a4ab9190",
+      "category": "Dev Tools",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S068",
+      "name": "Figma(@figma)",
+      "url": "https://api.xgo.ing/rss/user/f8a106a09a7d404fb8de7eb0c5ddd2a2",
+      "category": "Dev Tools",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S069",
+      "name": "Notion(@NotionHQ)",
+      "url": "https://api.xgo.ing/rss/user/f97a26863aec4425b021720d4f8e4ede",
+      "category": "Dev Tools",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S070",
+      "name": "NotebookLM(@NotebookLM)",
+      "url": "https://api.xgo.ing/rss/user/221a88341acb475db221a12fed8208d0",
+      "category": "Dev Tools",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S124",
+      "name": "Peter Yang",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCnpBg7yqNauHtlNSpOl5-cg",
+      "category": "视频",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S125",
+      "name": "Lenny's Podcast",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC6t1O76G0jYXOAoYCm153dA",
+      "category": "视频",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S126",
+      "name": "20VC",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCf0PBRjhf0rF8fWBIxTuoWA",
+      "category": "视频",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S127",
+      "name": "OpenAI News",
+      "url": "https://openai.com/news/rss.xml",
+      "category": "OPML 示例",
+      "enabled": true,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S128",
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "category": "OPML 示例",
+      "enabled": true,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S129",
+      "name": "InfoQ CN",
+      "url": "https://www.infoq.cn/feed",
+      "category": "OPML 示例",
+      "enabled": false,
+      "max_articles": 3
+    }
+  ],
+  "url": [],
+  "wechat": [
+    {
+      "reference_id": "S071",
+      "name": "机器之心",
+      "url": "https://decemberpei.cyou/rssbox/wechat-jiqizhixin.xml",
+      "category": "AI",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S072",
+      "name": "量子位",
+      "url": "https://decemberpei.cyou/rssbox/wechat-liangziwei.xml",
+      "category": "AI",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S073",
+      "name": "新智元",
+      "url": "https://decemberpei.cyou/rssbox/wechat-xinzhiyuan.xml",
+      "category": "AI",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S074",
+      "name": "DeepTech深科技",
+      "url": "https://decemberpei.cyou/rssbox/wechat-shenkeji.xml",
+      "category": "AI",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S075",
+      "name": "PaperWeekly",
+      "url": "https://decemberpei.cyou/rssbox/wechat-paperweekly.xml",
+      "category": "AI",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S076",
+      "name": "计算机视觉life",
+      "url": "https://decemberpei.cyou/rssbox/wechat-jisuanjishijuelife.xml",
+      "category": "AI",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S077",
+      "name": "AI前线",
+      "url": "https://decemberpei.cyou/rssbox/wechat-aiqianxian.xml",
+      "category": "AI",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S078",
+      "name": "夕小瑶科技说",
+      "url": "https://decemberpei.cyou/rssbox/wechat-xixiaoyaokejishuo.xml",
+      "category": "AI",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S079",
+      "name": "海外独角兽",
+      "url": "https://decemberpei.cyou/rssbox/wechat-haiwaidujiaoshou.xml",
+      "category": "AI",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S080",
+      "name": "甲子光年",
+      "url": "https://decemberpei.cyou/rssbox/wechat-jiaziguangnian.xml",
+      "category": "AI",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S081",
+      "name": "集智俱乐部",
+      "url": "https://decemberpei.cyou/rssbox/wechat-jizhijvlebu.xml",
+      "category": "AI",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S082",
+      "name": "晚点LatePost",
+      "url": "https://decemberpei.cyou/rssbox/wechat-wandian.xml",
+      "category": "科技媒体",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S083",
+      "name": "36氪",
+      "url": "https://decemberpei.cyou/rssbox/wechat-36ke.xml",
+      "category": "科技媒体",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S084",
+      "name": "36氪Pro",
+      "url": "https://decemberpei.cyou/rssbox/wechat-sanliukepro.xml",
+      "category": "科技媒体",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S085",
+      "name": "虎嗅App",
+      "url": "https://decemberpei.cyou/rssbox/wechat-huxiuapp.xml",
+      "category": "科技媒体",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S086",
+      "name": "极客公园",
+      "url": "https://decemberpei.cyou/rssbox/wechat-jikegongyuan.xml",
+      "category": "科技媒体",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S087",
+      "name": "少数派",
+      "url": "https://decemberpei.cyou/rssbox/wechat-shaoshupai.xml",
+      "category": "科技媒体",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S088",
+      "name": "APPSO",
+      "url": "https://decemberpei.cyou/rssbox/wechat-appso.xml",
+      "category": "科技媒体",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S089",
+      "name": "爱范儿",
+      "url": "https://decemberpei.cyou/rssbox/wechat-anfaner.xml",
+      "category": "科技媒体",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S090",
+      "name": "差评",
+      "url": "https://decemberpei.cyou/rssbox/wechat-chaping.xml",
+      "category": "科技媒体",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S091",
+      "name": "钛媒体",
+      "url": "https://decemberpei.cyou/rssbox/wechat-taimeiti.xml",
+      "category": "科技媒体",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S092",
+      "name": "InfoQ",
+      "url": "https://decemberpei.cyou/rssbox/wechat-infoq.xml",
+      "category": "技术开发",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S093",
+      "name": "阿里云开发者",
+      "url": "https://decemberpei.cyou/rssbox/wechat-aliyunkaifazhe.xml",
+      "category": "技术开发",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S094",
+      "name": "腾讯技术工程",
+      "url": "https://decemberpei.cyou/rssbox/wechat-tengxunjishugongcheng.xml",
+      "category": "技术开发",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S095",
+      "name": "前端之巅",
+      "url": "https://decemberpei.cyou/rssbox/wechat-qianduanzhidian.xml",
+      "category": "技术开发",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S096",
+      "name": "架构师之路",
+      "url": "https://decemberpei.cyou/rssbox/wechat-jiagoushizhilu.xml",
+      "category": "技术开发",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S097",
+      "name": "GitHubDaily",
+      "url": "https://decemberpei.cyou/rssbox/wechat-githubdaily.xml",
+      "category": "技术开发",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S098",
+      "name": "华尔街见闻",
+      "url": "https://decemberpei.cyou/rssbox/wechat-huaerjiejianwen.xml",
+      "category": "财经投资",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S099",
+      "name": "财经杂志",
+      "url": "https://decemberpei.cyou/rssbox/wechat-caijingzazhi.xml",
+      "category": "财经投资",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S100",
+      "name": "第一财经YiMagazine",
+      "url": "https://decemberpei.cyou/rssbox/wechat-diyicaijing.xml",
+      "category": "财经投资",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S101",
+      "name": "经纬创投",
+      "url": "https://decemberpei.cyou/rssbox/wechat-jingweichuangtou.xml",
+      "category": "财经投资",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S102",
+      "name": "红杉汇",
+      "url": "https://decemberpei.cyou/rssbox/wechat-hongshanhui.xml",
+      "category": "财经投资",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S103",
+      "name": "42章经",
+      "url": "https://decemberpei.cyou/rssbox/wechat-sierzhangjing.xml",
+      "category": "财经投资",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S104",
+      "name": "远川投资评论",
+      "url": "https://decemberpei.cyou/rssbox/wechat-chuanyuanyouzipinglun.xml",
+      "category": "财经投资",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S105",
+      "name": "泽平宏观展望",
+      "url": "https://decemberpei.cyou/rssbox/wechat-zepinghongguanzhanwang.xml",
+      "category": "财经投资",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S106",
+      "name": "caoz的梦呓",
+      "url": "https://decemberpei.cyou/rssbox/wechat-caozdemengyi.xml",
+      "category": "个人博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S107",
+      "name": "L先生说",
+      "url": "https://decemberpei.cyou/rssbox/wechat-lxianshengshuo.xml",
+      "category": "个人博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S108",
+      "name": "槽边往事",
+      "url": "https://decemberpei.cyou/rssbox/wechat-caobianwangshi.xml",
+      "category": "个人博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S109",
+      "name": "孟岩",
+      "url": "https://decemberpei.cyou/rssbox/wechat-mengyan.xml",
+      "category": "个人博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S110",
+      "name": "刘润",
+      "url": "https://decemberpei.cyou/rssbox/wechat-liurun.xml",
+      "category": "个人博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S111",
+      "name": "辉哥奇谭",
+      "url": "https://decemberpei.cyou/rssbox/wechat-huigeqitan.xml",
+      "category": "个人博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S112",
+      "name": "warfalcon",
+      "url": "https://decemberpei.cyou/rssbox/wechat-warfalcon.xml",
+      "category": "个人博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S113",
+      "name": "玉树芝兰",
+      "url": "https://decemberpei.cyou/rssbox/wechat-yushuzhilan.xml",
+      "category": "个人博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S114",
+      "name": "九边",
+      "url": "https://decemberpei.cyou/rssbox/wechat-jiubian.xml",
+      "category": "个人博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S115",
+      "name": "也谈钱",
+      "url": "https://decemberpei.cyou/rssbox/wechat-yetanqian.xml",
+      "category": "个人博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S116",
+      "name": "keso怎么看",
+      "url": "https://decemberpei.cyou/rssbox/wechat-kesozenmekan.xml",
+      "category": "个人博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S117",
+      "name": "阑夕",
+      "url": "https://decemberpei.cyou/rssbox/wechat-lanxi.xml",
+      "category": "个人博主",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S118",
+      "name": "人人都是产品经理",
+      "url": "https://decemberpei.cyou/rssbox/wechat-renrendoushichanpinjingli.xml",
+      "category": "产品商业",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S119",
+      "name": "互联网怪盗团",
+      "url": "https://decemberpei.cyou/rssbox/wechat-hulianwangguaidaotuan.xml",
+      "category": "产品商业",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S120",
+      "name": "乱翻书",
+      "url": "https://decemberpei.cyou/rssbox/wechat-luanfanshu.xml",
+      "category": "产品商业",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S121",
+      "name": "刘言飞语",
+      "url": "https://decemberpei.cyou/rssbox/wechat-liuyanfeiyu.xml",
+      "category": "产品商业",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S122",
+      "name": "产品犬舍",
+      "url": "https://decemberpei.cyou/rssbox/wechat-chanpinquanshe.xml",
+      "category": "产品商业",
+      "enabled": false,
+      "max_articles": 3
+    },
+    {
+      "reference_id": "S123",
+      "name": "FounderPark",
+      "url": "https://decemberpei.cyou/rssbox/wechat-founderpark.xml",
+      "category": "产品商业",
+      "enabled": false,
+      "max_articles": 3
+    }
+  ]
+}
