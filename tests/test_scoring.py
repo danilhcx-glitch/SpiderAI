@@ -8,10 +8,14 @@ from unittest.mock import Mock, patch
 
 import collecter
 from app import rank
-from app.qwen import QwenClient, QwenError, QwenTruncatedError
+from app.llm import AIClient, AIError, AITruncatedError
 from app.rank import rank_snapshot
 from app.scoring import (calculate_score, company_source, priority_reference_sources,
                          reference_source, validate_assessment)
+
+# 使用虚构配置验证评分逻辑不依赖特定接口或模型。
+TEST_ENDPOINT = "https://example.com/v1/chat/completions"
+TEST_MODEL = "example-model"
 
 
 def assessment(dimensions, *, related=True):
@@ -48,9 +52,9 @@ class ScoringTests(unittest.TestCase):
             with self.subTest(value=value), self.assertRaises(ValueError):
                 validate_assessment(value)
 
-    def test_qwen_analyze_one_call_and_bounded_body(self):
+    def test_ai_analyze_one_call_and_bounded_body(self):
         """模型只收到限定长度的材料，并有足够输出配额完成评分。"""
-        client = QwenClient("fake")
+        client = AIClient("fake", TEST_ENDPOINT, TEST_MODEL)
         dimensions = {"relevance": 5, "impact": 5, "novelty": 5, "evidence": 5}
         with patch.object(client, "chat", return_value={
             "content": json.dumps(assessment(dimensions)), "usage": {}, "model": "test",
@@ -65,20 +69,20 @@ class ScoringTests(unittest.TestCase):
             "content": json.dumps({**assessment(dimensions), "dimensions": {"impact": 5}}),
             "usage": {}, "model": "test",
         }):
-            with self.assertRaises(QwenError):
+            with self.assertRaises(AIError):
                 client.analyze({"title": "新模型"})
 
-    def test_qwen_analyze_retries_only_truncated_output(self):
+    def test_ai_analyze_retries_only_truncated_output(self):
         """评分输出截断时提高上限重试一次，其他错误保持单次调用。"""
-        client = QwenClient("fake")
+        client = AIClient("fake", TEST_ENDPOINT, TEST_MODEL)
         valid = {"content": json.dumps(assessment({key: 4 for key in
                   ("relevance", "impact", "novelty", "evidence")})), "usage": {}, "model": "test"}
-        with patch.object(client, "chat", side_effect=[QwenTruncatedError("截断"), valid]) as chat:
+        with patch.object(client, "chat", side_effect=[AITruncatedError("截断"), valid]) as chat:
             self.assertEqual(client.analyze({"title": "新模型"})["article"]["score"], 80)
         self.assertEqual([call.kwargs["max_tokens"] for call in chat.call_args_list],
                          [8192, 16384])
-        with patch.object(client, "chat", side_effect=QwenError("无权限")) as chat:
-            with self.assertRaises(QwenError):
+        with patch.object(client, "chat", side_effect=AIError("无权限")) as chat:
+            with self.assertRaises(AIError):
                 client.analyze({"title": "新模型"})
         chat.assert_called_once()
 
@@ -89,8 +93,9 @@ class ScoringTests(unittest.TestCase):
         low = validate_assessment(assessment({key: 1 for key in
                                               ("relevance", "impact", "novelty", "evidence")}))
         client = Mock()
+        client.model = TEST_MODEL
         client.analyze.side_effect = [
-            {"article": low}, QwenError("模拟失败"), {"article": high}, {"article": high},
+            {"article": low}, AIError("模拟失败"), {"article": high}, {"article": high},
         ]
         payload = {"collected_at": "original", "errors": [], "articles": [
             {"title": "低", "score": 99}, {"title": "失败", "score": 99},
@@ -104,6 +109,7 @@ class ScoringTests(unittest.TestCase):
         self.assertEqual(ranked["articles"][-1]["scoring_error"], "模拟失败")
         self.assertEqual(ranked["collected_at"], "original")
         self.assertEqual(ranked["ranking"]["scored"], 3)
+        self.assertEqual(ranked["ranking"]["model"], TEST_MODEL)
         self.assertEqual(payload["articles"][0]["score"], 99)
 
     def test_official_domain_requires_real_hostname(self):
@@ -237,7 +243,7 @@ class ScoringTests(unittest.TestCase):
         self.assertEqual(rows[0]["ai_company"], "Mistral AI")
 
     @patch("collecter.collect")
-    @patch("app.qwen.QwenClient.from_env")
+    @patch("app.llm.AIClient.from_env")
     def test_collector_defaults_to_config_and_scoring(self, from_env, collect):
         """无参数采集使用项目配置并默认保存模型排序结果。"""
         high = validate_assessment(assessment({key: 5 for key in
@@ -245,6 +251,7 @@ class ScoringTests(unittest.TestCase):
         low = validate_assessment(assessment({key: 1 for key in
                                               ("relevance", "impact", "novelty", "evidence")}))
         from_env.return_value.analyze.side_effect = [{"article": low}, {"article": high}]
+        from_env.return_value.model = TEST_MODEL
         collect.return_value = ([{"title": "低"}, {"title": "高"}], [])
         with tempfile.TemporaryDirectory() as directory:
             config = Path(directory) / "config" / "sources.json"
@@ -259,9 +266,10 @@ class ScoringTests(unittest.TestCase):
         from_env.assert_called_once()
         self.assertEqual([row["title"] for row in result["articles"]], ["高", "低"])
         self.assertEqual(result["ranking"]["scored"], 2)
+        self.assertEqual(result["ranking"]["model"], TEST_MODEL)
 
     @patch("collecter.collect", return_value=([{"title": "只采集"}], []))
-    @patch("app.qwen.QwenClient.from_env")
+    @patch("app.llm.AIClient.from_env")
     def test_collector_no_score_skips_model(self, from_env, collect):
         """显式跳过评分时不读取 key，仍保存采集结果。"""
         with tempfile.TemporaryDirectory() as directory:
@@ -277,12 +285,13 @@ class ScoringTests(unittest.TestCase):
         collect.assert_called_once()
         self.assertNotIn("ranking", result)
 
-    @patch("app.rank.QwenClient.from_env")
+    @patch("app.rank.AIClient.from_env")
     def test_existing_snapshot_cli_preserves_metadata(self, from_env):
         """历史快照评分应保留采集时间和来源错误，并写入排序结果。"""
         high = validate_assessment(assessment({key: 5 for key in
                                                ("relevance", "impact", "novelty", "evidence")}))
         from_env.return_value.analyze.return_value = {"article": high}
+        from_env.return_value.model = TEST_MODEL
         with tempfile.TemporaryDirectory() as directory:
             source = Path(directory) / "source.json"
             output = Path(directory) / "ranked.json"

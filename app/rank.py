@@ -1,4 +1,4 @@
-"""对采集快照逐篇调用 Qwen 评分，并将重要资讯排在前面。"""
+"""对采集快照逐篇调用配置的模型评分，并将重要资讯排在前面。"""
 
 import argparse
 import json
@@ -8,11 +8,11 @@ import sqlite3
 import sys
 import tempfile
 
-from app.qwen import MODEL, QwenClient, QwenError
+from app.llm import AIClient, AIError
 from app.scoring import SOURCE_PRIORITY_BONUS, WEIGHTS, company_source, reference_source
 
 
-def rank_snapshot(payload: dict, client: QwenClient) -> tuple[dict, int]:
+def rank_snapshot(payload: dict, client: AIClient) -> tuple[dict, int]:
     """对快照中的每篇资讯评分；单篇失败保留原文并放到列表末尾。"""
     if not isinstance(payload, dict) or not isinstance(payload.get("articles"), list):
         raise ValueError("快照必须包含 articles 列表")
@@ -45,7 +45,7 @@ def rank_snapshot(payload: dict, client: QwenClient) -> tuple[dict, int]:
             item["priority"] = (
                 "高" if item["rank_score"] >= 80 else "中" if item["rank_score"] >= 60 else "低"
             )
-        except (QwenError, ValueError) as exc:
+        except (AIError, ValueError) as exc:
             failed += 1
             item["score"] = None
             item["rank_score"] = None
@@ -58,8 +58,9 @@ def rank_snapshot(payload: dict, client: QwenClient) -> tuple[dict, int]:
     # 按加分后的排序分数排列；同分保留采集顺序，未评分文章放在最后。
     articles.sort(key=lambda item: (item["rank_score"] is not None, item["rank_score"] or 0),
                   reverse=True)
+    # 快照记录本次实际配置的模型，供重评和查看历史结果时追溯。
     ranked = {**payload, "articles": articles, "ranking": {
-        "model": MODEL, "weights": WEIGHTS.copy(), "source_priority_bonus": SOURCE_PRIORITY_BONUS,
+        "model": client.model, "weights": WEIGHTS.copy(), "source_priority_bonus": SOURCE_PRIORITY_BONUS,
         "scored": len(articles) - failed, "failed": failed,
     }}
     return ranked, failed
@@ -84,13 +85,13 @@ def write_snapshot(path: Path, payload: dict) -> None:
 
 def main() -> int:
     """读取已有采集快照，评分后另存 JSON，并在终端显示前十条。"""
-    parser = argparse.ArgumentParser(description="使用 Qwen 为 AI 资讯加权评分并排序")
+    parser = argparse.ArgumentParser(description="使用配置的模型为 AI 资讯加权评分并排序")
     parser.add_argument("--input", type=Path, required=True, help="采集器输出的 JSON 快照")
     parser.add_argument("--output", type=Path, required=True, help="排序后的 JSON 路径")
     args = parser.parse_args()
     try:
         payload = json.loads(args.input.read_text(encoding="utf-8"))
-        ranked, failed = rank_snapshot(payload, QwenClient.from_env())
+        ranked, failed = rank_snapshot(payload, AIClient.from_env())
         write_snapshot(args.output, ranked)
         # 评分后的同一快照同步入库，页面刷新即可看到新的排序分。
         from app.db import cleanup_if_due, save_snapshot
@@ -99,7 +100,7 @@ def main() -> int:
         cleanup_if_due()
         # 评分结果入库成功后检查过期快照，避免旧 JSON 持续占用磁盘。
         cleanup_expired_snapshots()
-    except (OSError, UnicodeError, json.JSONDecodeError, ValueError, sqlite3.Error, QwenError) as exc:
+    except (OSError, UnicodeError, json.JSONDecodeError, ValueError, sqlite3.Error, AIError) as exc:
         print(f"评分失败：{exc}", file=sys.stderr)
         return 1
     for article in ranked["articles"][:10]:
