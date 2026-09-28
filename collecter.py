@@ -1,4 +1,4 @@
-"""采集资讯并默认调用 Qwen 评分，再将结果保存为 JSON 与 SQLite 归档。"""
+"""采集资讯并默认调用配置的模型评分，再将结果保存为 JSON 与 SQLite 归档。"""
 
 from __future__ import annotations
 
@@ -305,9 +305,9 @@ def main() -> int:
     # 默认评分；保留旧开关兼容已有命令，显式跳过时不读取模型密钥。
     scoring = parser.add_mutually_exclusive_group()
     scoring.add_argument("--score", dest="score", action="store_true", default=True,
-                         help="采集后调用 Qwen 评分；默认已启用，保留旧命令兼容")
+                         help="采集后调用配置的模型评分；默认已启用，保留旧命令兼容")
     scoring.add_argument("--no-score", dest="score", action="store_false",
-                         help="仅采集并入库，本次不调用 Qwen")
+                         help="仅采集并入库，本次不调用模型")
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(levelname)s：%(message)s")
     try:
@@ -320,10 +320,10 @@ def main() -> int:
     client = None
     if args.score:
         # 联网采集前校验密钥，避免采集完成后才发现无法评分。
-        from app.qwen import QwenClient, QwenError
+        from app.llm import AIClient, AIError
         try:
-            client = QwenClient.from_env()
-        except QwenError as exc:
+            client = AIClient.from_env()
+        except AIError as exc:
             parser.error(str(exc))
     articles, errors = collect(rss, urls, wechat)
     ranking = None
